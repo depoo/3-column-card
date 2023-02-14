@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+  --orange-color: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  --white: hsla(0, 0%, 100%, 0.75);
+  --lightGray: hsl(0, 0%, 95%);
+
+  --Lexend: 'Lexend Deca', sans-serif;
+  --Shoulders: 'Big Shoulders Display', cursive;
+
+  --Regular:400;
+  --Bold:700;
+}
+body{
+  background-color: var(--lightGray);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin: 1.875rem .9375rem;
+}
+.grid{
+  display: grid;
+  margin: 2.8125rem 1.5625rem;
+  border-radius: .625rem;
+  overflow: hidden;
+
+  &-box{
+    &-one{
+      padding: 3rem 3.0894rem;
+      background-color: var(--orange-color);
+    }
+
+    &-icon{
+      width: 4rem;
+      padding-bottom: 35px;
+    }
+    &-title{
+      display: inline-block;
+      text-transform: uppercase;
+      color: var(--lightGray);
+      font-family: var(--Shoulders);
+      font-weight: var(--Bold);
+      font-size: 2em;
+
+      padding-bottom: 1.75rem;
+    }
+    &-paragraph{
+      color: var(--white);
+      font-family: var(--Lexend);
+      font-weight: var(--Regular);
+      font-size: .9375em;
+      line-height: 1.8rem;
+      padding-bottom: 1.5rem;
+      // text-align: start;
+    }
+    &-button{
+      background-color: var(--lightGray);
+      border: none;
+      border-radius: 4rem;
+      height: 3.0625rem;
+      width: 9.25rem;
+      font-family: var(--Lexend);
+      &:hover{
+        background: none;
+      }
+
+      &-link{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+          color: var(--lightGray);
+          border: 1px solid var(--white);
+          border-radius: 4rem;
+        }
+      }
+      &-link__one{
+        color: var(--orange-color);
+      }
+      &-link__two{
+        color: var(--darkCyan);
+      }
+      &-link__three{
+        color: var(--veryDarkCyan);
+      }
+    }
+
+    &-two{
+      padding: 3rem 3.0894rem;
+      background-color: var(--darkCyan);
+    }
+    &-three{
+      padding: 3rem 3.0894rem;
+      background-color: var(--veryDarkCyan);
+    }
+  }
+}
